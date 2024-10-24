@@ -1,3 +1,6 @@
+import java.util.NoSuchElementException;
+import edu.grinnell.csc207.util.AssociativeArray;
+
 /**
  * Creates a set of mappings of an AAC that has two levels,
  * one for categories and then within each category, it has
@@ -6,10 +9,16 @@
  * and updating the set of images that would be shown and handling
  * an interactions.
  * 
- * @author Catie Baker & YOUR NAME HERE
+ * @author Catie Baker & Tiffany Tang
  *
  */
 public class AACMappings implements AACPage {
+
+   //Note that your AACMappings class will likely contain an AACCategory object that maps filenames to their corresponding words. 
+	 //You may also want an AssociativeArray<String,AACCategory> that maps either filenames or names to categories.
+
+   AACCategory firstlevel;
+	 AssociativeArray<String, AACCategory> secondlevel;
 	
 	/**
 	 * Creates a set of mappings for the AAC based on the provided
@@ -32,6 +41,8 @@ public class AACMappings implements AACPage {
 	 * @param filename the name of the file that stores the mapping information
 	 */
 	public AACMappings(String filename) {
+     
+    
 
 	}
 	
