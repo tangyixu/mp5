@@ -41,10 +41,11 @@ public class AACMappings implements AACPage {
 	 * @param filename the name of the file that stores the mapping information
 	 */
 	public AACMappings(String filename) {
-     
     
-
-	}
+		this.secondlevel.addItem(filename);
+		this.firstlevel.pairs = this.secondlevel;
+    
+	}//AACMappings
 	
 	/**
 	 * Given the image location selected, it determines the action to be
